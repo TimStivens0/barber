@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-light sticky-top pt-3 pb-2">
+<nav class="navbar navbar-expand-lg bg-light pt-3 pb-2">
   <div class="container">
-    <a class="navbar-brand text-warning bg-dark px-4 rounded me-5 py-2 ms-5"><h5 class="pt-1">Timur</h5></a>
+    <a class="navbar-brand text-warning bg-dark px-4 rounded me-5 py-2 ms-5" href="/"><h5 class="pt-1">Timur</h5></a>
     <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,7 +21,7 @@
       </ul>
       <form class="d-flex">
           <li class="nav-item dropdown d-flex p-2 ">
-          <a class="nav-link dropdown-toggle me-4 py-1 text-primary me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle py-1 text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Language
           </a>
           <ul class="dropdown-menu">
@@ -30,6 +30,7 @@
             <li><a class="dropdown-item text-primary" href="#">Russian</a></li>
           </ul>
         </li>
+          <a class="btn btn-info btn-outline-light rounded-3 me-5 mx-3 pt-2" href="{% url 'input' %}">Input info</a>
       </form>
     </div>
   </div>
