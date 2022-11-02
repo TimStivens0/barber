@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-_n5_ckz-eda=6k=ynni9q2-x^kwlq@ag^4*9zyw$99ydo&d(0a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,6 +38,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.MiddlewareMixin',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -97,6 +98,12 @@ TIME_ZONE = 'Asia/Tashkent'
 USE_I18N = True
 
 USE_TZ = True
+
+LANGUAGES = [
+    ('en', 'English'),
+    ('uz', 'Uzbek'),
+    ('ru', 'Russian')
+]
 
 
 # Static files (CSS, JavaScript, Images)

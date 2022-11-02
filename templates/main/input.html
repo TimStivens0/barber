@@ -7,7 +7,7 @@
     <div class="container-fluid my-5 py-5">
         <div class="row">
             <div class="col-6 offset-3 shadow-lg p-3 mb-5 bg-body rounded border border-primary">
-                <h1 class="text-center my-4 fw-bold fs-1">Input your information</h1>
+                <div class="text-center mb-1 mt-3"><h1 class="text-primary d-inline">Input </h1><h1 class="text-warning d-inline">your info</h1></div>
                 <hr class="my-4 mx-5 border-warning">
                 <form action="{% url 'input' %}" method="post">
                     {% csrf_token %}

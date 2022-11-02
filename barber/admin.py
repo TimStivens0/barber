@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import BarberModel
 
-# Register your models here.
+
+@admin.register(BarberModel)
+class BarberModelAdmin(admin.ModelAdmin):
+    pass

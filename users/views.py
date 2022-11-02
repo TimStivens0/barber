@@ -4,7 +4,9 @@ from .models import UserModel
 
 
 def home_view(request):
-    return render(request, 'main/home.html', context={})
+    return render(request, 'main/home.html', context={
+
+    })
 
 
 def input_view(request):
@@ -14,7 +16,7 @@ def input_view(request):
         if data.is_valid():
             user = UserModel(
                 full_name=data.cleaned_data['full_name'],
-                phone=data.cleaned_data['phone']
+                phone=data.cleaned_data['phone'],
             )
             user.save()
             return redirect('/')
