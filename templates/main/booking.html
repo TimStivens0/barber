@@ -4,34 +4,127 @@
 
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="container shadow-lg my-3 bg-body rounded-3 border border-warning" style="width: 50rem;">
+        <div class="text-center pt-3"><h1 class="text-warning d-inline">Select </h1><h1 class="text-primary d-inline">Your Time</h1></div>
+        <hr class="border-primary mx-5">
         <div class="row">
-            <div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+           <div class="col-3 ms-5 ps-4 pt-1 pb-3">
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
-                        9
+                        09:00 AM
+                        {% for barber in barbers %}
+                            {{ barber.time1 }}
+                        {% endfor %}
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">
-                        10
+                        10:00 AM
+                        {% for barber in barbers %}
+                            {{ barber.time2 }}
+                        {% endfor %}
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        11
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {% for barber in barbers %}
+                            {{ barber.time3 }}
+                        {% endfor %}
+                        11:00 AM
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                    <label class="form-check-label" for="flexRadioDefault4">
-                        12
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        {% for barber in barbers %}
+                            {{ barber.time4 }}
+                        {% endfor %}
+                        12:00 AM
                     </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {% for barber in barbers %}
+                            {{ barber.time5 }}
+                        {% endfor %}
+                        02:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        {% for barber in barbers %}
+                            {{ barber.time6 }}
+                        {% endfor %}
+                        03:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {% for barber in barbers %}
+                            {{ barber.time7 }}
+                        {% endfor %}
+                        04:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        {% for barber in barbers %}
+                            {{ barber.time8 }}
+                        {% endfor %}
+                        05:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {% for barber in barbers %}
+                            {{ barber.time9 }}
+                        {% endfor %}
+                        07:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        {% for barber in barbers %}
+                            {{ barber.time10 }}
+                        {% endfor %}
+                        08:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {% for barber in barbers %}
+                            {{ barber.time11 }}
+                        {% endfor %}
+                        09:00 PM
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        {% for barber in barbers %}
+                            {{ barber.time12 }}
+                        {% endfor %}
+                        10:00 PM
+                    </label>
+                </div>
+           </div>
+            <div class="col-7">
+                <div class="row">
+                    <img src="https://static.wixstatic.com/media/359e87_8473a5f499b24d5fb13ee9bf42e21a9f~mv2.jpg/v1/crop/x_0,y_412,w_1772,h_1349/fill/w_560,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/TUDOR_BARBER_CLOCK.jpg" height="380vh" class="shadow-sm py-2 mt-2 bg-light bg-body rounded-5">
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-info btn-outline-light rounded-3 pt-2 px-5 mt-5" href="{% url 'input' %}">Next -></a>
                 </div>
             </div>
-        </div>
     </div>
 {% endblock %}
